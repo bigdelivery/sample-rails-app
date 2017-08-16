@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  sample-rails-app:
+    image: sample-rails-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
