@@ -1,7 +1,7 @@
 FROM ruby:2.4-alpine
 LABEL Name=sample-rails-app Version=0.0.1 
 
-RUN apk update && apk add build-base nodejs libsqlite3-dev sqlite3
+RUN apk update && apk add build-base nodejs sqlite-dev sqlite
 
 RUN mkdir /app
 WORKDIR /app
